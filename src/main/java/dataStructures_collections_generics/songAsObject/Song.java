@@ -1,6 +1,6 @@
 package dataStructures_collections_generics.songAsObject;
 
-public class Song implements Comparable {
+public class Song implements Comparable<Song> {
 
     private String title;
     private String artist;
@@ -17,8 +17,8 @@ public class Song implements Comparable {
 
     // We need to implement Comparable to make use of Collections.sort();
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(Song song) {
+        return title.compareTo(song.getTitle());
     }
 
     @Override
