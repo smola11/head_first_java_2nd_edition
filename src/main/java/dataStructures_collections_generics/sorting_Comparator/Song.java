@@ -1,4 +1,4 @@
-package dataStructures_collections_generics.songAsObject;
+package dataStructures_collections_generics.sorting_Comparator;
 
 public class Song implements Comparable<Song> {
 
