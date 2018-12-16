@@ -1,18 +1,18 @@
-package dataStructures_collections_generics.duplicates_Set;
+package dataStructures_collections_generics.dupicateSorted_TreeSet_5;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.TreeSet;
 
-public class Jukebox4 {
+public class Jukebox5 {
 
     private ArrayList<Song> songList = new ArrayList<>();
 
     public static void main(String[] args) {
-        new Jukebox4().go();
+        new Jukebox5().go();
     }
 
     public void go() {
@@ -21,8 +21,8 @@ public class Jukebox4 {
         Collections.sort(songList);
         System.out.println(songList);
 
-        // Using HashSet - to work we need to have EQUALS and HASHCODE
-        HashSet<Song> songHashSet = new HashSet<>();
+        // Using TreeSet - avoid duplicates and sorting (using compareTo or compare method)
+        TreeSet<Song> songHashSet = new TreeSet<>();
         songHashSet.addAll(songList);
         System.out.println(songHashSet);
     }

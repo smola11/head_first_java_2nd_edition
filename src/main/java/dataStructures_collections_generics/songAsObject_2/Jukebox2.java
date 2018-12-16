@@ -1,4 +1,4 @@
-package dataStructures_collections_generics.songAsObject;
+package dataStructures_collections_generics.songAsObject_2;
 
 import java.io.BufferedReader;
 import java.io.File;

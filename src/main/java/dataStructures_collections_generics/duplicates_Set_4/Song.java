@@ -1,4 +1,4 @@
-package dataStructures_collections_generics.sorting_Comparator;
+package dataStructures_collections_generics.duplicates_Set_4;
 
 public class Song implements Comparable<Song> {
 
@@ -13,6 +13,18 @@ public class Song implements Comparable<Song> {
         artist = a;
         rating = r;
         bpm = b;
+    }
+
+    // We now override equals() and hashcode() to make use of Set
+    @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object aSong) {
+        Song s = (Song) aSong;
+        return getTitle().equals(s.getTitle());
     }
 
     // We need to implement Comparable to make use of Collections.sort(List<>);

@@ -1,4 +1,4 @@
-package dataStructures_collections_generics.sorting_Comparator;
+package dataStructures_collections_generics.sorting_Comparator_3;
 
 import java.io.BufferedReader;
 import java.io.File;

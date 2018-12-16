@@ -1,4 +1,4 @@
-package dataStructures_collections_generics.songAsObject;
+package dataStructures_collections_generics.dupicateSorted_TreeSet_5;
 
 public class Song implements Comparable<Song> {
 
@@ -15,7 +15,7 @@ public class Song implements Comparable<Song> {
         bpm = b;
     }
 
-    // We need to implement Comparable to make use of Collections.sort(List<>);
+    // TreeSet uses this method to sort element when inserted and CHECK IF THEY ARE EQUAL;
     @Override
     public int compareTo(Song song) {
         return title.compareTo(song.getTitle());
